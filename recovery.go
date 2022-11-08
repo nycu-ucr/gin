@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	net "github.com/nycu-ucr/gonet"
+	"net"
 
 	"github.com/nycu-ucr/gonet/http"
 )

@@ -12,9 +12,10 @@ import (
 	"strings"
 	"sync"
 
+	"net"
+
 	"github.com/nycu-ucr/gin/internal/bytesconv"
 	"github.com/nycu-ucr/gin/render"
-	net "github.com/nycu-ucr/gonet"
 	"github.com/nycu-ucr/gonet/http"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
