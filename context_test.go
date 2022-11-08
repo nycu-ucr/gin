@@ -26,9 +26,9 @@ import (
 
 	"github.com/nycu-ucr/gonet/http"
 
-	"github.com/gin-contrib/sse"
 	"github.com/nycu-ucr/gin/binding"
 	testdata "github.com/nycu-ucr/gin/testdata/protoexample"
+	"github.com/nycu-ucr/sse"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 )

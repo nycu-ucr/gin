@@ -11,7 +11,7 @@ import (
 
 	"github.com/nycu-ucr/gonet/http"
 
-	"github.com/gin-contrib/sse"
+	"github.com/nycu-ucr/sse"
 	"github.com/stretchr/testify/assert"
 )
 

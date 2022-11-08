@@ -22,9 +22,9 @@ import (
 
 	"github.com/nycu-ucr/gonet/http"
 
-	"github.com/gin-contrib/sse"
 	"github.com/nycu-ucr/gin/binding"
 	"github.com/nycu-ucr/gin/render"
+	"github.com/nycu-ucr/sse"
 )
 
 // Content-Type MIME of the most common data formats.

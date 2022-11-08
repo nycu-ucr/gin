@@ -4,13 +4,13 @@ go 1.19
 
 require (
 	github.com/bytedance/sonic v1.5.0
-	github.com/gin-contrib/sse v0.1.0
 	github.com/go-playground/validator/v10 v10.11.1
 	github.com/goccy/go-json v0.9.11
 	github.com/json-iterator/go v1.1.12
 	github.com/mattn/go-isatty v0.0.16
-	github.com/nycu-ucr/gonet v0.0.0-20221108084857-1f56f4458f52
+	github.com/nycu-ucr/gonet v0.0.0-20221108134747-494161cf16d6
 	github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530
+	github.com/nycu-ucr/sse v0.0.0-20221108140034-8e09fddc7347
 	github.com/pelletier/go-toml/v2 v2.0.5
 	github.com/stretchr/testify v1.8.1
 	github.com/ugorji/go/codec v1.2.7

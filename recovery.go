@@ -11,11 +11,12 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net/http/httputil"
 	"os"
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/nycu-ucr/gonet/http/httputil"
 
 	"net"
 
