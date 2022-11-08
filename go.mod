@@ -10,10 +10,10 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/mattn/go-isatty v0.0.16
 	github.com/nycu-ucr/gonet v0.0.0-20221108084857-1f56f4458f52
+	github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530
 	github.com/pelletier/go-toml/v2 v2.0.5
 	github.com/stretchr/testify v1.8.1
 	github.com/ugorji/go/codec v1.2.7
-	golang.org/x/net v0.1.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -35,6 +35,7 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	golang.org/x/arch v0.0.0-20210923205945-b76863e36670 // indirect
 	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 // indirect
+	golang.org/x/net v0.1.0 // indirect
 	golang.org/x/sys v0.1.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

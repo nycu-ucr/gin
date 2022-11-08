@@ -17,8 +17,8 @@ import (
 	"github.com/nycu-ucr/gin/internal/bytesconv"
 	"github.com/nycu-ucr/gin/render"
 	"github.com/nycu-ucr/gonet/http"
-	"golang.org/x/net/http2"
-	"golang.org/x/net/http2/h2c"
+	"github.com/nycu-ucr/net/http2"
+	"github.com/nycu-ucr/net/http2/h2c"
 )
 
 const defaultMultipartMemory = 32 << 20 // 32 MB

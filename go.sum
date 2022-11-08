@@ -48,6 +48,8 @@ github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9G
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
 github.com/nycu-ucr/gonet v0.0.0-20221108084857-1f56f4458f52 h1:ai+6NZryi5Iu+8ps1Ba33hZbz4Ea8IOHkf2W0tVRtFg=
 github.com/nycu-ucr/gonet v0.0.0-20221108084857-1f56f4458f52/go.mod h1:B3Mq6qrsCo8ihS5rJRUzEwEBQTV0wyZ3uwzidt9Y6Zw=
+github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530 h1:lKDIqMPOfDYKRo3A9OH4jxNI3aEYyymW9pPwI+qUCcE=
+github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530/go.mod h1:cX7CZkKCdiA1Vdgoc3/cvzZ+hdvrmZr943wuv//C33k=
 github.com/nycu-ucr/onvmpoller v0.0.0-20220929124448-6a86f69361a1 h1:t3KkOXgGM4OGguogcEFKHmD+XmxnWRuG+qvIjPc+J/0=
 github.com/nycu-ucr/onvmpoller v0.0.0-20220929124448-6a86f69361a1/go.mod h1:ACxx8tnYzE/QXmX9IvIBYQKhp3EwJspAsz141gRCoP0=
 github.com/pelletier/go-toml/v2 v2.0.5 h1:ipoSadvV8oGUjnUbMub59IDPPwfxF694nG/jwbMiyQg=

@@ -21,8 +21,8 @@ import (
 
 	"github.com/nycu-ucr/gonet/http"
 
+	"github.com/nycu-ucr/net/http2"
 	"github.com/stretchr/testify/assert"
-	"golang.org/x/net/http2"
 )
 
 func formatAsDate(t time.Time) string {
