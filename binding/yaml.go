@@ -6,8 +6,8 @@ package binding
 
 import (
 	"bytes"
+	"github.com/nycu-ucr/gonet/http"
 	"io"
-	"net/http"
 
 	"gopkg.in/yaml.v2"
 )

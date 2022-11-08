@@ -6,9 +6,10 @@ package render
 
 import (
 	"fmt"
-	"net/http"
 
-	"github.com/gin-gonic/gin/internal/bytesconv"
+	"github.com/nycu-ucr/gonet/http"
+
+	"github.com/nycu-ucr/gin/internal/bytesconv"
 )
 
 // String contains the given interface object slice and its format.

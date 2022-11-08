@@ -7,8 +7,10 @@ package gin
 import (
 	"bufio"
 	"io"
-	"net"
-	"net/http"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 const (

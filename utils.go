@@ -6,7 +6,7 @@ package gin
 
 import (
 	"encoding/xml"
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 	"os"
 	"path"
 	"reflect"

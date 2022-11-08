@@ -4,7 +4,7 @@
 
 package render
 
-import "net/http"
+import "github.com/nycu-ucr/gonet/http"
 
 // Render interface is to be implemented by JSON, XML, HTML, YAML and so on.
 type Render interface {

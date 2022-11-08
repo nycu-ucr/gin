@@ -6,9 +6,9 @@ package binding
 
 import (
 	"bytes"
+	"github.com/nycu-ucr/gonet/http"
 	"io/ioutil"
 	"mime/multipart"
-	"net/http"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

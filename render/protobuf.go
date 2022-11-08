@@ -5,7 +5,7 @@
 package render
 
 import (
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 
 	"google.golang.org/protobuf/proto"
 )

@@ -4,7 +4,7 @@
 
 package binding
 
-import "net/http"
+import "github.com/nycu-ucr/gonet/http"
 
 type queryBinding struct{}
 

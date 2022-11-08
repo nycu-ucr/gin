@@ -4,7 +4,7 @@
 
 package render
 
-import "net/http"
+import "github.com/nycu-ucr/gonet/http"
 
 // Data contains ContentType and bytes data.
 type Data struct {

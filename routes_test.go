@@ -7,11 +7,13 @@ package gin
 import (
 	"fmt"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )

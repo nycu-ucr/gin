@@ -9,9 +9,9 @@ package gin
 
 import (
 	"bytes"
+	"github.com/nycu-ucr/gonet/http"
+	"github.com/nycu-ucr/gonet/http/httptest"
 	"mime/multipart"
-	"net/http"
-	"net/http/httptest"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

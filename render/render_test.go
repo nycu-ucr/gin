@@ -8,13 +8,14 @@ import (
 	"encoding/xml"
 	"errors"
 	"html/template"
-	"net/http"
-	"net/http/httptest"
 	"strconv"
 	"strings"
 	"testing"
 
-	testdata "github.com/gin-gonic/gin/testdata/protoexample"
+	"github.com/nycu-ucr/gonet/http"
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	testdata "github.com/nycu-ucr/gin/testdata/protoexample"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 )

@@ -11,8 +11,6 @@ import (
 	"log"
 	"math"
 	"mime/multipart"
-	"net"
-	"net/http"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -20,9 +18,13 @@ import (
 	"sync"
 	"time"
 
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
+
 	"github.com/gin-contrib/sse"
-	"github.com/gin-gonic/gin/binding"
-	"github.com/gin-gonic/gin/render"
+	"github.com/nycu-ucr/gin/binding"
+	"github.com/nycu-ucr/gin/render"
 )
 
 // Content-Type MIME of the most common data formats.

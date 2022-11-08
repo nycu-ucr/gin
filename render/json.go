@@ -8,10 +8,11 @@ import (
 	"bytes"
 	"fmt"
 	"html/template"
-	"net/http"
 
-	"github.com/gin-gonic/gin/internal/bytesconv"
-	"github.com/gin-gonic/gin/internal/json"
+	"github.com/nycu-ucr/gonet/http"
+
+	"github.com/nycu-ucr/gin/internal/bytesconv"
+	"github.com/nycu-ucr/gin/internal/json"
 )
 
 // JSON contains the given interface object.

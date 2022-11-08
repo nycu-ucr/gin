@@ -8,10 +8,12 @@ import (
 	"bytes"
 	"fmt"
 	"math/rand"
-	"net/http"
-	"net/http/httptest"
 	"os"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )

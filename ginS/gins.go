@@ -6,10 +6,11 @@ package ginS
 
 import (
 	"html/template"
-	"net/http"
 	"sync"
 
-	"github.com/gin-gonic/gin"
+	"github.com/nycu-ucr/gonet/http"
+
+	"github.com/nycu-ucr/gin"
 )
 
 var once sync.Once

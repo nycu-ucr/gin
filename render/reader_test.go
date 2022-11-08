@@ -5,9 +5,10 @@
 package render
 
 import (
-	"net/http/httptest"
 	"strings"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
 
 	"github.com/stretchr/testify/require"
 )

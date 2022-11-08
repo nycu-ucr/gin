@@ -9,14 +9,17 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
-	"net"
-	"net/http"
-	"net/http/httptest"
 	"reflect"
 	"strconv"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/http2"
@@ -493,27 +496,27 @@ func TestListOfRoutes(t *testing.T) {
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/favicon.ico",
-		Handler: "^(.*/vendor/)?github.com/gin-gonic/gin.handlerTest1$",
+		Handler: "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerTest1$",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/",
-		Handler: "^(.*/vendor/)?github.com/gin-gonic/gin.handlerTest1$",
+		Handler: "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerTest1$",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/users/",
-		Handler: "^(.*/vendor/)?github.com/gin-gonic/gin.handlerTest2$",
+		Handler: "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerTest2$",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/users/:id",
-		Handler: "^(.*/vendor/)?github.com/gin-gonic/gin.handlerTest1$",
+		Handler: "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerTest1$",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "POST",
 		Path:    "/users/:id",
-		Handler: "^(.*/vendor/)?github.com/gin-gonic/gin.handlerTest2$",
+		Handler: "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerTest2$",
 	})
 }
 

@@ -6,8 +6,8 @@ package gin
 
 import (
 	"fmt"
+	"github.com/nycu-ucr/gonet/http"
 	"io"
-	"net/http"
 	"os"
 	"time"
 

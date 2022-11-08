@@ -12,9 +12,6 @@ import (
 	"html/template"
 	"io"
 	"mime/multipart"
-	"net"
-	"net/http"
-	"net/http/httptest"
 	"net/url"
 	"os"
 	"reflect"
@@ -23,9 +20,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
+
 	"github.com/gin-contrib/sse"
-	"github.com/gin-gonic/gin/binding"
-	testdata "github.com/gin-gonic/gin/testdata/protoexample"
+	"github.com/nycu-ucr/gin/binding"
+	testdata "github.com/nycu-ucr/gin/testdata/protoexample"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 )
@@ -340,7 +343,7 @@ func TestContextHandlerName(t *testing.T) {
 	c, _ := CreateTestContext(httptest.NewRecorder())
 	c.handlers = HandlersChain{func(c *Context) {}, handlerNameTest}
 
-	assert.Regexp(t, "^(.*/vendor/)?github.com/gin-gonic/gin.handlerNameTest$", c.HandlerName())
+	assert.Regexp(t, "^(.*/vendor/)?github.com/nycu-ucr/gin.handlerNameTest$", c.HandlerName())
 }
 
 func TestContextHandlerNames(t *testing.T) {

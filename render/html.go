@@ -5,8 +5,8 @@
 package render
 
 import (
+	"github.com/nycu-ucr/gonet/http"
 	"html/template"
-	"net/http"
 )
 
 // Delims represents a set of Left and Right delimiters for HTML template rendering.

@@ -5,7 +5,7 @@
 package render
 
 import (
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 
 	"gopkg.in/yaml.v2"
 )

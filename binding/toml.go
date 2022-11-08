@@ -6,8 +6,8 @@ package binding
 
 import (
 	"bytes"
+	"github.com/nycu-ucr/gonet/http"
 	"io"
-	"net/http"
 
 	"github.com/pelletier/go-toml/v2"
 )

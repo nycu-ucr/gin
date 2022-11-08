@@ -6,7 +6,7 @@ package render
 
 import (
 	"fmt"
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 )
 
 // Redirect contains the http request reference and redirects status code and location.

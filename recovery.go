@@ -11,13 +11,15 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net"
-	"net/http"
 	"net/http/httputil"
 	"os"
 	"runtime"
 	"strings"
 	"time"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 var (

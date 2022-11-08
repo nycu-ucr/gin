@@ -8,8 +8,9 @@ import (
 	"bytes"
 	"encoding/xml"
 	"fmt"
-	"net/http"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -86,7 +87,7 @@ func TestFilterFlags(t *testing.T) {
 }
 
 func TestFunctionName(t *testing.T) {
-	assert.Regexp(t, `^(.*/vendor/)?github.com/gin-gonic/gin.somefunction$`, nameOfFunction(somefunction))
+	assert.Regexp(t, `^(.*/vendor/)?github.com/nycu-ucr/gin.somefunction$`, nameOfFunction(somefunction))
 }
 
 func somefunction() {

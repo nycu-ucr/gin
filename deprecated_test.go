@@ -6,11 +6,12 @@ package gin
 
 import (
 	"bytes"
-	"net/http"
-	"net/http/httptest"
 	"testing"
 
-	"github.com/gin-gonic/gin/binding"
+	"github.com/nycu-ucr/gonet/http"
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	"github.com/nycu-ucr/gin/binding"
 	"github.com/stretchr/testify/assert"
 )
 

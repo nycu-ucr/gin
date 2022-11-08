@@ -7,7 +7,7 @@
 
 package binding
 
-import "net/http"
+import "github.com/nycu-ucr/gonet/http"
 
 // Content-Type MIME of the most common data formats.
 const (

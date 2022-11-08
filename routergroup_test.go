@@ -5,8 +5,9 @@
 package gin
 
 import (
-	"net/http"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -9,8 +9,9 @@ package render
 
 import (
 	"bytes"
-	"net/http/httptest"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/ugorji/go/codec"

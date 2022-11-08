@@ -6,9 +6,10 @@ package gin
 
 import (
 	"html/template"
-	"net/http"
 	"os"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 func BenchmarkOneRoute(B *testing.B) {

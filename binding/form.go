@@ -6,7 +6,7 @@ package binding
 
 import (
 	"errors"
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 )
 
 const defaultMemory = 32 << 20

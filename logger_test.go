@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 	"testing"
 	"time"
 

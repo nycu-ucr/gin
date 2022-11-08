@@ -6,8 +6,8 @@ package binding
 
 import (
 	"errors"
+	"github.com/nycu-ucr/gonet/http"
 	"mime/multipart"
-	"net/http"
 	"reflect"
 )
 

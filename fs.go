@@ -5,8 +5,9 @@
 package gin
 
 import (
-	"net/http"
 	"os"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 type onlyFilesFS struct {

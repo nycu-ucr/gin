@@ -10,15 +10,18 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
-	"net"
-	"net/http"
-	"net/http/httptest"
 	"os"
 	"path/filepath"
 	"runtime"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/nycu-ucr/gonet/http/httptest"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )

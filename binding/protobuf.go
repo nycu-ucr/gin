@@ -6,8 +6,8 @@ package binding
 
 import (
 	"errors"
+	"github.com/nycu-ucr/gonet/http"
 	"io/ioutil"
-	"net/http"
 
 	"google.golang.org/protobuf/proto"
 )

@@ -10,9 +10,10 @@ package gin
 import (
 	"bytes"
 	"mime/multipart"
-	"net/http"
-	"net/http/httptest"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http"
+	"github.com/nycu-ucr/gonet/http/httptest"
 
 	"github.com/stretchr/testify/assert"
 )

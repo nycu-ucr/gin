@@ -5,8 +5,8 @@
 package render
 
 import (
+	"github.com/nycu-ucr/gonet/http"
 	"io"
-	"net/http"
 	"strconv"
 )
 

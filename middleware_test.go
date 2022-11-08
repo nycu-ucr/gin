@@ -6,9 +6,10 @@ package gin
 
 import (
 	"errors"
-	"net/http"
 	"strings"
 	"testing"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/gin-contrib/sse"
 	"github.com/stretchr/testify/assert"

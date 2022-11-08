@@ -6,7 +6,7 @@ package render
 
 import (
 	"encoding/xml"
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 )
 
 // XML contains the given interface object.

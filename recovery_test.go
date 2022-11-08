@@ -7,12 +7,14 @@ package gin
 import (
 	"bytes"
 	"fmt"
-	"net"
-	"net/http"
 	"os"
 	"strings"
 	"syscall"
 	"testing"
+
+	net "github.com/nycu-ucr/gonet"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/stretchr/testify/assert"
 )

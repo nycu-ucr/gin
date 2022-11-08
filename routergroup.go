@@ -5,7 +5,7 @@
 package gin
 
 import (
-	"net/http"
+	"github.com/nycu-ucr/gonet/http"
 	"path"
 	"regexp"
 	"strings"
