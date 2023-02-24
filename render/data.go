@@ -14,8 +14,10 @@ type Data struct {
 
 // Render (Data) writes data with custom ContentType.
 func (r Data) Render(w http.ResponseWriter) (err error) {
+	// println("gin/render/data.go, Data.Render Start")
 	r.WriteContentType(w)
 	_, err = w.Write(r.Data)
+	// println("gin/render/data.go, Data.Render End")
 	return
 }
 

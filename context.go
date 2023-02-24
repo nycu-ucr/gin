@@ -916,17 +916,20 @@ func (c *Context) Cookie(name string) (string, error) {
 
 // Render writes the response headers and calls render.Render to render data.
 func (c *Context) Render(code int, r render.Render) {
+	// println("gin/context.go, Context.Render Start")
 	c.Status(code)
 
 	if !bodyAllowedForStatus(code) {
 		r.WriteContentType(c.Writer)
 		c.Writer.WriteHeaderNow()
+		// println("gin/context.go, Context.Render Error, status: ", code)
 		return
 	}
 
 	if err := r.Render(c.Writer); err != nil {
 		panic(err)
 	}
+	// println("gin/context.go, Context.Render End")
 }
 
 // HTML renders the HTTP template specified by its file name.
@@ -1019,10 +1022,12 @@ func (c *Context) Redirect(code int, location string) {
 
 // Data writes some data into the body stream and updates the HTTP code.
 func (c *Context) Data(code int, contentType string, data []byte) {
+	// println("gin/context.go, Context.Data Start")
 	c.Render(code, render.Data{
 		ContentType: contentType,
 		Data:        data,
 	})
+	// println("gin/context.go, Context.Data End")
 }
 
 // DataFromReader writes the specified reader into the body stream and updates the HTTP code.

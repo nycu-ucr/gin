@@ -44,12 +44,12 @@ github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 h1:ZqeYNhU3OH
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/nycu-ucr/gonet v0.0.0-20221108134747-494161cf16d6 h1:zBHSJE7Q3RmkBeKLM9y4u5//kibDi6WzbAUBae/m3B0=
-github.com/nycu-ucr/gonet v0.0.0-20221108134747-494161cf16d6/go.mod h1:RJXqx/AFRiJR1NLNWmZ7BXbeaTftYhmW1yKA+Zuhe4c=
-github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530 h1:lKDIqMPOfDYKRo3A9OH4jxNI3aEYyymW9pPwI+qUCcE=
-github.com/nycu-ucr/net v0.0.0-20221108130538-2200884e9530/go.mod h1:cX7CZkKCdiA1Vdgoc3/cvzZ+hdvrmZr943wuv//C33k=
-github.com/nycu-ucr/onvmpoller v0.0.0-20220929124448-6a86f69361a1 h1:t3KkOXgGM4OGguogcEFKHmD+XmxnWRuG+qvIjPc+J/0=
-github.com/nycu-ucr/onvmpoller v0.0.0-20220929124448-6a86f69361a1/go.mod h1:ACxx8tnYzE/QXmX9IvIBYQKhp3EwJspAsz141gRCoP0=
+github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211 h1:5jDQkxPiAjoITjxPpVHicC+VUrd6rlit0afOSBe/SMc=
+github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211/go.mod h1:Sz4ZVhcMgT3X7tcy/sDkzPwPJtLTdslKt0blQXD7ID4=
+github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d h1:DG2WobILKdMqDIXJDNmVIDpkC3BUvR5MXPNrxpGIpks=
+github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d/go.mod h1:YhEbietZ3Djp1HrSoJX3uSooye2EtI0EV+WrUOE7fs4=
+github.com/nycu-ucr/onvmpoller v0.0.0-20230222141454-8145d720d05c h1:4i0Ca0mJ+uFxBXAP0LJV7eiFVHxeBAvEYcesqQJDe9s=
+github.com/nycu-ucr/onvmpoller v0.0.0-20230222141454-8145d720d05c/go.mod h1:KGOJFB22ziiaSu3FEpKZLBmwwbH2XIvcI7AigdWRxNU=
 github.com/nycu-ucr/sse v0.0.0-20221108140034-8e09fddc7347 h1:TTevBy56sviIo1sQXxqzGOWVg8EprP+cDIdbZgB0vu8=
 github.com/nycu-ucr/sse v0.0.0-20221108140034-8e09fddc7347/go.mod h1:cTHuRZqz4zKejBiZsJj4N2oeGFw3XE2z2QzX+9/gJvs=
 github.com/pelletier/go-toml/v2 v2.0.5 h1:ipoSadvV8oGUjnUbMub59IDPPwfxF694nG/jwbMiyQg=
@@ -82,8 +82,6 @@ golang.org/x/arch v0.0.0-20210923205945-b76863e36670/go.mod h1:5om86z9Hs0C8fWVUu
 golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3 h1:0es+/5331RGQPcXlMfP+WrnIIS6dNnNRe0WB02W0F4M=
 golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=
 golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
-golang.org/x/net v0.1.0 h1:hZ/3BUoy5aId7sCpA/Tc5lt8DkFgdVS2onTpJsZ/fl0=
-golang.org/x/net v0.1.0/go.mod h1:Cx3nUiGt4eDBEyega/BKRp+/AlGL8hYe7U9odMt2Cco=
 golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210423082822-04245dca01da/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

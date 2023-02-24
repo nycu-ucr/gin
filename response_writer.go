@@ -7,7 +7,6 @@ package gin
 import (
 	"bufio"
 	"io"
-
 	"net"
 
 	"github.com/nycu-ucr/gonet/http"
@@ -60,32 +59,40 @@ func (w *responseWriter) reset(writer http.ResponseWriter) {
 }
 
 func (w *responseWriter) WriteHeader(code int) {
+	// println("gin/response_writer.go, responseWriter.WriteHeader Start")
 	if code > 0 && w.status != code {
 		if w.Written() {
 			debugPrint("[WARNING] Headers were already written. Wanted to override status code %d with %d", w.status, code)
 		}
 		w.status = code
 	}
+	// println("gin/response_writer.go, responseWriter.WriteHeader End")
 }
 
 func (w *responseWriter) WriteHeaderNow() {
+	// println("gin/response_writer.go, responseWriter.WriteHeaderNow Start")
 	if !w.Written() {
 		w.size = 0
 		w.ResponseWriter.WriteHeader(w.status)
 	}
+	// println("gin/response_writer.go, responseWriter.WriteHeaderNow End")
 }
 
 func (w *responseWriter) Write(data []byte) (n int, err error) {
+	// println("gin/response_writer.go, responseWriter.Write Start")
 	w.WriteHeaderNow()
 	n, err = w.ResponseWriter.Write(data)
 	w.size += n
+	// println("gin/response_writer.go, responseWriter.Write End")
 	return
 }
 
 func (w *responseWriter) WriteString(s string) (n int, err error) {
+	// println("gin/response_writer.go, responseWriter.WriteString Start")
 	w.WriteHeaderNow()
 	n, err = io.WriteString(w.ResponseWriter, s)
 	w.size += n
+	// println("gin/response_writer.go, responseWriter.WriteString End")
 	return
 }
 
@@ -116,13 +123,17 @@ func (w *responseWriter) CloseNotify() <-chan bool {
 
 // Flush implements the http.Flusher interface.
 func (w *responseWriter) Flush() {
+	// println("gin/response_writer.go, responseWriter.Flush Start")
 	w.WriteHeaderNow()
 	w.ResponseWriter.(http.Flusher).Flush()
+	// println("gin/response_writer.go, responseWriter.Flush End")
 }
 
 func (w *responseWriter) Pusher() (pusher http.Pusher) {
+	// println("gin/response_writer.go, responseWriter.Pusher Start")
 	if pusher, ok := w.ResponseWriter.(http.Pusher); ok {
 		return pusher
 	}
+	// println("gin/response_writer.go, responseWriter.Pusher End")
 	return nil
 }

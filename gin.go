@@ -565,6 +565,7 @@ func (engine *Engine) RunListener(listener net.Listener) (err error) {
 
 // ServeHTTP conforms to the http.Handler interface.
 func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+	// println("gin/gin.go, ServeHTTP Start")
 	c := engine.pool.Get().(*Context)
 	c.writermem.reset(w)
 	c.Request = req
@@ -573,6 +574,7 @@ func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	engine.handleHTTPRequest(c)
 
 	engine.pool.Put(c)
+	// println("gin/gin.go, ServeHTTP End")
 }
 
 // HandleContext re-enters a context that has been rewritten.
@@ -587,6 +589,7 @@ func (engine *Engine) HandleContext(c *Context) {
 }
 
 func (engine *Engine) handleHTTPRequest(c *Context) {
+	// println("gin/gin.go, handleHTTPRequest Start")
 	httpMethod := c.Request.Method
 	rPath := c.Request.URL.Path
 	unescape := false
@@ -616,6 +619,7 @@ func (engine *Engine) handleHTTPRequest(c *Context) {
 			c.fullPath = value.fullPath
 			c.Next()
 			c.writermem.WriteHeaderNow()
+			// println("gin/gin.go, handleHTTPRequest End")
 			return
 		}
 		if httpMethod != http.MethodConnect && rPath != "/" {
