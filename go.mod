@@ -8,8 +8,8 @@ require (
 	github.com/goccy/go-json v0.9.11
 	github.com/json-iterator/go v1.1.12
 	github.com/mattn/go-isatty v0.0.16
-	github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211
-	github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d
+	github.com/nycu-ucr/gonet v0.0.0-20230307120806-af99a970179a
+	github.com/nycu-ucr/net v0.0.0-20230307120859-5f5d7afdaf03
 	github.com/nycu-ucr/sse v0.0.0-20221108140034-8e09fddc7347
 	github.com/pelletier/go-toml/v2 v2.0.5
 	github.com/stretchr/testify v1.8.1
