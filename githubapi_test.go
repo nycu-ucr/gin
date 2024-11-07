@@ -5,10 +5,10 @@
 package gin
 
 import (
-	"bytes"
 	"fmt"
 	"math/rand"
 	"os"
+	"strings"
 	"testing"
 
 	"github.com/nycu-ucr/gonet/http/httptest"
@@ -403,7 +403,7 @@ func TestGithubAPI(t *testing.T) {
 }
 
 func exampleFromPath(path string) (string, Params) {
-	output := new(bytes.Buffer)
+	output := new(strings.Builder)
 	params := make(Params, 0, 6)
 	start := -1
 	for i, c := range path {

@@ -6,9 +6,9 @@ package binding
 
 import (
 	"bytes"
-	"github.com/nycu-ucr/gonet/http"
-	"io/ioutil"
+	"io"
 	"mime/multipart"
+	"github.com/nycu-ucr/gonet/http"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -129,7 +129,7 @@ func assertMultipartFileHeader(t *testing.T, fh *multipart.FileHeader, file test
 	fl, err := fh.Open()
 	assert.NoError(t, err)
 
-	body, err := ioutil.ReadAll(fl)
+	body, err := io.ReadAll(fl)
 	assert.NoError(t, err)
 	assert.Equal(t, string(file.Content), string(body))
 

@@ -7,7 +7,7 @@ package render
 import (
 	"github.com/nycu-ucr/gonet/http"
 
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 )
 
 // YAML contains the given interface object.
