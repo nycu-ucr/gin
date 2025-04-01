@@ -6,9 +6,10 @@ package binding
 
 import (
 	"errors"
-	"github.com/nycu-ucr/gonet/http"
 	"mime/multipart"
 	"reflect"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 type multipartRequest http.Request

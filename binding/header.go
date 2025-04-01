@@ -5,9 +5,10 @@
 package binding
 
 import (
-	"github.com/nycu-ucr/gonet/http"
 	"net/textproto"
 	"reflect"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 type headerBinding struct{}

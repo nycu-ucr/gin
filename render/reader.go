@@ -5,9 +5,10 @@
 package render
 
 import (
-	"github.com/nycu-ucr/gonet/http"
 	"io"
 	"strconv"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 // Reader contains the IO reader and its length, and custom ContentType and other headers.

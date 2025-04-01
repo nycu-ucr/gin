@@ -3,14 +3,14 @@
 // license that can be found in the LICENSE file.
 
 //go:build !nomsgpack
-// +build !nomsgpack
 
 package binding
 
 import (
 	"bytes"
-	"github.com/nycu-ucr/gonet/http"
 	"io"
+
+	"github.com/nycu-ucr/gonet/http"
 
 	"github.com/ugorji/go/codec"
 )

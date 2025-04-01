@@ -6,10 +6,11 @@ package binding
 
 import (
 	"bytes"
-	"github.com/nycu-ucr/gonet/http"
 	"io"
 
-	"gopkg.in/yaml.v2"
+	"github.com/nycu-ucr/gonet/http"
+
+	"gopkg.in/yaml.v3"
 )
 
 type yamlBinding struct{}

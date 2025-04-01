@@ -5,4 +5,7 @@ count.out
 test
 profile.out
 tmp.out
-*_test.go
+
+# Develop tools
+.idea/
+.vscode/

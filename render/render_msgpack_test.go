@@ -3,7 +3,6 @@
 // license that can be found in the LICENSE file.
 
 //go:build !nomsgpack
-// +build !nomsgpack
 
 package render
 
@@ -14,6 +13,7 @@ import (
 	"github.com/nycu-ucr/gonet/http/httptest"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 	"github.com/ugorji/go/codec"
 )
 
@@ -31,7 +31,7 @@ func TestRenderMsgPack(t *testing.T) {
 
 	err := (MsgPack{data}).Render(w)
 
-	assert.NoError(t, err)
+	require.NoError(t, err)
 
 	h := new(codec.MsgpackHandle)
 	assert.NotNil(t, h)
@@ -39,7 +39,7 @@ func TestRenderMsgPack(t *testing.T) {
 	assert.NotNil(t, buf)
 	err = codec.NewEncoder(buf, h).Encode(data)
 
-	assert.NoError(t, err)
+	require.NoError(t, err)
 	assert.Equal(t, w.Body.String(), buf.String())
 	assert.Equal(t, "application/msgpack; charset=utf-8", w.Header().Get("Content-Type"))
 }

@@ -6,13 +6,14 @@ package gin
 
 import (
 	"encoding/xml"
-	"github.com/nycu-ucr/gonet/http"
 	"os"
 	"path"
 	"reflect"
 	"runtime"
 	"strings"
 	"unicode"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 // BindKey indicates a default bind key.
@@ -50,7 +51,7 @@ func WrapH(h http.Handler) HandlerFunc {
 	}
 }
 
-// H is a shortcut for map[string]interface{}
+// H is a shortcut for map[string]any
 type H map[string]any
 
 // MarshalXML allows type H to be used with xml.Marshal.

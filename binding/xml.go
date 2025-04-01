@@ -7,8 +7,9 @@ package binding
 import (
 	"bytes"
 	"encoding/xml"
-	"github.com/nycu-ucr/gonet/http"
 	"io"
+
+	"github.com/nycu-ucr/gonet/http"
 )
 
 type xmlBinding struct{}
