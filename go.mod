@@ -16,8 +16,8 @@ require (
 )
 
 require (
-	github.com/nycu-ucr/gonet v0.0.0-20231031091538-7b378fb19c77
-	github.com/nycu-ucr/net v0.0.0-20240927052029-2f95767a4aec
+	github.com/nycu-ucr/gonet v0.0.0-20250423025127-ecbd471be7ee
+	github.com/nycu-ucr/net v0.0.0-20250421092837-e154d11df6a2
 	github.com/nycu-ucr/sse v0.0.0-20250401074339-42a0225e0ade
 )
 
